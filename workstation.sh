@@ -83,4 +83,7 @@ chmod 700 get_helm.sh
 ./get_helm.sh
 VALIDATE $? "Helm installation"
 
+# install K9s
+curl -sS https://webinstall.dev/k9s | bash
+
 echo -e "$R Logout and login again $N"
